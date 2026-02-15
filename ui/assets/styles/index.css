@@ -1,0 +1,15 @@
+/* ============================================================
+   MAIN STYLESHEET — Import order matters for conflicting selectors
+   ============================================================ */
+
+/* Base: resets, typography, shared utilities, chips */
+@import './base.css';
+
+/* Shared modal structure, form fields, selects */
+@import './modals.css';
+
+/* Component-specific styles */
+@import './filter-cards.css';
+@import './details-modal.css';
+@import './bulk-modal.css';
+@import './entity-preview.css';

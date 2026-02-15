@@ -1,0 +1,55 @@
+{
+  "name": "maintenance-windows",
+  "version": "1.0.3",
+  "description": "View and create maintenance windows.",
+  "scripts": {
+    "build": "dt-app build --prod",
+    "start": "dt-app dev",
+    "create:function": "dt-app function create",
+    "create:action": "dt-app action create",
+    "uninstall": "dt-app uninstall",
+    "deploy": "dt-app deploy",
+    "update": "dt-app update",
+    "info": "dt-app info",
+    "help": "dt-app help",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=16.13.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dynatrace-sdk/app-environment": "^1.1.4",
+    "@dynatrace-sdk/client-classic-environment-v2": "^5.1.0",
+    "@dynatrace-sdk/client-query": "^1.21.2",
+    "@dynatrace-sdk/error-handlers": "^1.3.1",
+    "@dynatrace-sdk/navigation": "^2.2.0",
+    "@dynatrace-sdk/react-hooks": "~1.6.0",
+    "@dynatrace-sdk/user-preferences": "^1.1.3",
+    "@dynatrace/strato-components": "^1.15.0",
+    "@dynatrace/strato-components-preview": "^2.13.2",
+    "@dynatrace/strato-design-tokens": "^1.3.0",
+    "@dynatrace/strato-icons": "^1.11.1",
+    "framer-motion": "^12.33.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "6.6.2",
+    "react-router-dom": "^6.22.2"
+  },
+  "devDependencies": {
+    "@microsoft/eslint-plugin-sdl": "^0.2.0",
+    "@types/node": "^16.18.126",
+    "@types/react": "^18.3.20",
+    "@types/react-dom": "^18.3.5",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "dt-app": "1.6.2",
+    "eslint": "^8.15.0",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "eslint-plugin-no-secrets": "^0.8.9",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "typescript": "5.6.2"
+  }
+}

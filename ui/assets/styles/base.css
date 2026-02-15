@@ -1,0 +1,148 @@
+/* ============================================================
+   BASE — Resets, scrollbars, layout, typography, shared utilities
+   ============================================================ */
+
+/* Scrollbar hiding */
+body::-webkit-scrollbar { display: none; }
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Page layout */
+.page-container { height: 95.5%; overflow: hidden; min-width: 844px; }
+.table-loading { height: 460px; }
+.table-container { height: 564px; max-height: 564px; }
+.search-container { display: flex; flex: 1 1 450px; max-width: 450px; }
+.search-input { flex-shrink: 1; width: 100%; }
+
+
+/* ── Typography ── */
+
+.text-secondary { color: var(--dt-colors-text-neutral-secondary); }
+.text-small { font-size: 12px; }
+.text-small-secondary { font-size: 12px; color: var(--dt-colors-text-neutral-secondary); }
+.text-hint { font-size: 13px; color: var(--dt-colors-text-neutral-secondary); }
+.text-count { margin: 0; font-size: 14px; }
+.text-mono { font-family: monospace; font-size: 12px; }
+.text-success { color: var(--dt-colors-text-success-default); }
+.text-error { color: var(--dt-colors-text-critical-default); }
+.optional-text { color: var(--dt-colors-text-neutral-disabled); }
+
+
+/* ── Shared buttons & icons ── */
+
+.btn-large-text { font-size: 15px; }
+.btn-index { margin-left: -2px; pointer-events: none; }
+.btn-inline { padding: 8px; flex-shrink: 0; }
+.btn-remove { margin-right: -2px; padding: 4px; }
+.btn-add-group { align-self: flex-start; padding: 6px 7px 6px 6px; display: inline-flex; vertical-align: center; }
+.btn-unshrinkable { flex-shrink: 0; }
+
+.icon-btn-giant { flex-shrink: 0; padding: 0px 6px 0px 0px; margin-left: -2px; }
+.icon-btn-large { flex-shrink: 0; padding: 0px 3px 0px 0px; margin-left: -2px; }
+.icon-btn-small { flex-shrink: 0; padding: 0px 5px 0px 0px; margin-top: 1.5px; }
+.icon-adjust { margin-top: 0px; }
+.icon-adjust-btn { margin-top: -1px; flex-shrink: 0; }
+
+
+/* ── Chips (shared across filter cards, details, bulk) ── */
+
+.chip {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--dt-colors-background-container-primary-accent);
+  color: var(--dt-colors-text-neutral-on-accent-default);
+  border-radius: 6px;
+  padding: 6px 8px 6px 12px;
+  font-size: 14px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.chip-no-buttons {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--dt-colors-background-container-primary-accent);
+  color: var(--dt-colors-text-neutral-on-accent-default);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.chip-no-buttons-wide {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  gap: 6px;
+  background-color: var(--dt-colors-background-container-primary-accent);
+  color: var(--dt-colors-text-neutral-on-accent-default);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.chip-editing {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  flex: 1;
+  gap: 6px;
+  background-color: var(--dt-colors-background-container-neutral-emphasized);
+  border-radius: 8px;
+  padding: 4px 8px 4px 12px;
+  font-size: 14px;
+}
+
+.chip-text {
+  display: block;
+  align-items: center;
+  color: var(--dt-colors-text-primary-on-accent-default);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.chip-text-entity-type {
+  display: flex;
+  align-items: center;
+  color: var(--dt-colors-text-neutral-default);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chip-remove {
+  background: none;
+  padding: 0 2px;
+  color: var(--dt-colors-text-primary-on-accent-default);
+  margin: -2px 0 0 0;
+  flex-shrink: 0;
+}
+
+.chip-remove:hover { color: var(--dt-colors-text-primary-on-accent-default-hover); }
+
+.chip-edit {
+  padding: 4px;
+  font-size: 14px;
+  margin-right: -4px;
+  color: var(--dt-colors-text-neutral-secondary);
+  line-height: 1;
+}
+
+.chip-delete { margin-top: 1px; }

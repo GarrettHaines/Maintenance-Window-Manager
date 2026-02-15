@@ -1,0 +1,60 @@
+/* ============================================================
+   DETAILS MODAL — Maintenance window detail view
+   ============================================================ */
+
+.details-modal-content { padding: 16px; max-height: 70vh; overflow: auto; }
+.details-section { margin-bottom: 0; }
+.details-section-title { font-size: 18px; font-weight: 600; margin-bottom: 12px; display: block; }
+.details-field { margin-bottom: 8px; }
+.details-field-label { min-width: 160px; color: var(--dt-colors-text-neutral-secondary); }
+
+.details-filter-card {
+  background-color: var(--dt-colors-background-container-neutral-subdued);
+  border: 2px solid var(--dt-colors-border-neutral-disabled);
+  border-radius: 6px;
+  padding: 11px 12px 4px 12px;
+  margin-bottom: 4px;
+}
+
+.details-filter-section { margin-bottom: 12px; }
+.details-filter-label { color: var(--dt-colors-text-neutral-default); font-size: 14px; font-weight: 500; display: block; margin-bottom: 6px; margin-left: 4px; }
+
+.details-filter-index {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--dt-colors-text-neutral-default);
+  background: var(--dt-colors-background-neutral-disabled);
+  border-radius: 10px;
+  padding: 1px 8px;
+  line-height: 18px;
+}
+
+/* Collapsible sections */
+.details-collapsible-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 0;
+  user-select: none;
+}
+
+.details-collapsible-header:hover { opacity: 0.8; }
+.details-collapsible-content { margin-top: 8px; }
+.details-entities-loading { height: 120px; }
+
+.details-entities-table {
+  max-height: 40vh;
+  overflow: auto;
+  border: 1px solid var(--dt-colors-border-neutral-default);
+  border-radius: 6px;
+}
+
+/* Accordion */
+.accordion { padding-bottom: 8px; }
+.accordion-label { font-size: 16px !important; }
+.accordion-label p { font-size: inherit !important; }
+.accordion-filters { margin-top: 4px; }

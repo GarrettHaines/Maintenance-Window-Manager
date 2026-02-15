@@ -1,0 +1,84 @@
+/* ============================================================
+   MODALS — Shared modal layout, footer, scroll, form fields
+   ============================================================ */
+
+/* Modal structure */
+.modal-with-footer { padding: 2px 0 0 0; overflow-y: hidden; }
+.modal-body { flex: 1; min-height: 0; overflow: hidden; min-width: 844px; }
+
+.modal-footer {
+  padding: 11px 18px 17px 18px;
+  vertical-align: center;
+  border-top: 1px solid var(--dt-colors-border-neutral-default);
+  background-color: var(--dt-colors-background-surface-default);
+}
+
+.modal-footer-link { margin-left: -16px; }
+.modal-footer-buttons { margin-right: -17px; }
+
+.modal-scroll-area {
+  flex: 1;
+  overflow-y: scroll;
+  padding: 16px;
+  padding-bottom: 8px;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+/* Dialog overrides (Strato modal internals) */
+[role="dialog"].modal-with-footer {
+  display: flex;
+  flex-direction: column;
+  height: 97.5vh;
+  width: 97.5vw;
+}
+
+[role="dialog"].modal-with-footer > div[style*="overflow-y"]:has(.modal-body),
+[role="dialog"].modal-bulk-with-footer > div[style*="overflow-y"]:has(.modal-body) {
+  overflow-y: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+  min-height: 0 !important;
+}
+
+[role="dialog"].modal-with-footer > div:last-child,
+[role="dialog"].modal-bulk-with-footer > div:last-child {
+  padding-bottom: 0px !important;
+}
+
+
+/* ── Form fields (shared across Create / Bulk modals) ── */
+
+.form-label { font-size: 15px; font-weight: 600; margin-bottom: 4px; display: block; }
+.form-row-offset { margin-top: -10px; }
+.form-field-half { flex: 1; }
+.form-field-date { flex: 2 1 220px; }
+.form-field-tz { flex: 2 1 320px; }
+.form-field-recurrence { flex: 1 1 138px; }
+
+.suppression-row { display: flex; flex-wrap: wrap; gap: 24px; }
+.form-field-suppression { flex: 1 1 auto; min-width: 0; }
+.form-field-synthetics { flex: 2 1 auto; }
+
+
+/* ── Select components ── */
+
+.select-trigger-full { width: 100%; }
+.select-trigger-truncate { width: 100%; max-width: 100%; }
+.select-trigger-truncate > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.select-content-mz { max-height: 150px; min-width: 236px; }
+.select-content-tz { min-width: var(--radix-select-trigger-width); }
+.select-content-recurrence { width: 138px; }
+.select-content-entity-quick { min-width: 160px; }
+.select-option-truncate { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.tz-option-content { width: 100%; }
+.text-input-flex { flex: 1; }
+
+.filter-section-hint {
+  font-size: 12px;
+  color: var(--dt-colors-text-neutral-secondary);
+  margin-bottom: 12px;
+  display: block;
+}

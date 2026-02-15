@@ -1,0 +1,38 @@
+/* ============================================================
+   ENTITY PREVIEW MODAL — Entity preview / matched entities view
+   ============================================================ */
+
+.entity-preview-modal-content {
+  padding: 8px 16px 16px 16px;
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.entity-preview-loading { height: 200px; }
+
+.entity-preview-empty {
+  padding: 32px 20px;
+  text-align: center;
+  border: 2px dashed var(--dt-colors-border-neutral-default);
+  border-radius: 8px;
+}
+
+.entity-preview-count {
+  background-color: var(--dt-colors-background-container-neutral-subdued);
+  border-radius: 6px;
+  padding: 10px 16px;
+  margin-bottom: 12px;
+}
+
+.entity-preview-count-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dt-colors-text-neutral-default);
+}
+
+.entity-preview-table {
+  max-height: 50vh;
+  overflow: auto;
+  border: 1px solid var(--dt-colors-border-neutral-default);
+  border-radius: 6px;
+}
