@@ -219,7 +219,7 @@ export async function cleanupExpiredAutoTags(): Promise<void> {
     });
 
     const now = new Date();
-    const tagsToDelete: string[] = [];
+    const tagsToDelete = new Set<string>();
 
     (response.items ?? []).forEach((item: any) => {
       const tagName = item.value?.name ?? '';
@@ -230,7 +230,7 @@ export async function cleanupExpiredAutoTags(): Promise<void> {
         if (dateMatch) {
           const expiration = new Date(`${dateMatch[1]}T${dateMatch[2]}Z`);
           if (!isNaN(expiration.getTime()) && expiration < now) {
-            tagsToDelete.push(item.objectId);
+            tagsToDelete.add(item.objectId);
           }
         }
       });
@@ -245,8 +245,8 @@ export async function cleanupExpiredAutoTags(): Promise<void> {
       }
     }
 
-    if (tagsToDelete.length > 0) {
-      console.log(`Cleaned up ${tagsToDelete.length} expired auto-tagging rule(s)`);
+    if (tagsToDelete.size > 0) {
+      console.log(`Cleaned up ${tagsToDelete.size} expired auto-tagging rule(s)`);
     }
   } catch (err) {
     console.error('Failed to cleanup expired auto-tags:', err);
