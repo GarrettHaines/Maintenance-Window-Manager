@@ -1,4 +1,4 @@
-# Getting Started with your Dynatrace App
+# Getting Started with your Dynatrace Maintenance Window Manager app
 
 This project was bootstrapped with Dynatrace App Toolkit. It uses React in combination with TypeScript to provide a great developer experience.
 
