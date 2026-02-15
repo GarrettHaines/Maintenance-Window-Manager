@@ -10,7 +10,7 @@ In the project directory, you can run:
 
 ### `npm run start` or `yarn start`
 
-Runs the app in the development mode. A new browser window with your running app will be automatically opened.
+This runs the app in the development mode. A new browser window with your running app will be automatically opened.
 
 Edit a component file in `ui` and save it. The page will reload when you make changes. You may also see any errors in the console.
 
