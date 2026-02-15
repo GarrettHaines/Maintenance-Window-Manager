@@ -2,7 +2,7 @@
 
 This project was bootstrapped with Dynatrace App Toolkit. It uses React in combination with TypeScript to provide a great developer experience.
 
-To get started, add your Dynatrace tenant URL to the `app.configjson` file.
+To get started, add your Dynatrace tenant URL to the `app.config.json` file.
 
 ## Available Scripts
 
