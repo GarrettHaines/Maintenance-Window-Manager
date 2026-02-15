@@ -2,7 +2,7 @@ import { Page } from "@dynatrace/strato-components-preview";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import { Header } from "./components/Header";
-import { MaintenanceWindows } from "./pages/MaintenanceWindows";
+import { MaintenanceWindowManager } from "./pages/MaintenanceWindowManager";
 
 export const App = () => {
   return (
@@ -12,7 +12,7 @@ export const App = () => {
       </Page.Header>
       <Page.Main>
         <Routes>
-          <Route path="/" element={<MaintenanceWindows />} />
+          <Route path="/" element={<MaintenanceWindowManager />} />
         </Routes>
       </Page.Main>
     </Page>

@@ -2,10 +2,10 @@
   "$schema": "./.dt-app/app.config.schema.json",
   "environmentUrl": "https://YOUR-TENANT-URL.dynatrace.com/",
   "app": {
-    "name": "Maintenance Windows",
-    "version": "1.0.3",
+    "name": "Maintenance Window Manager",
+    "version": "1.0.0",
     "description": "View and create maintenance windows.",
-    "id": "my.maintenance.windows",
+    "id": "my.maintenance.window.manager",
     "scopes": [
       {
         "name": "storage:logs:read",

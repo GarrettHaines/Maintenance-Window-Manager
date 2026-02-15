@@ -179,7 +179,6 @@ export const DetailsModal: React.FC<DetailsModalProps> = ({
                         data={allEntities}
                         columns={entityColumns}
                         variant={{ verticalDividers: true, verticalAlignment: { header: 'center', body: 'center' } }}
-                        fullWidth
                         sortable
                         resizable
                       />

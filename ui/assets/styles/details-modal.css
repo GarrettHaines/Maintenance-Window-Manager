@@ -47,10 +47,12 @@
 .details-entities-loading { height: 120px; }
 
 .details-entities-table {
-  max-height: 40vh;
   overflow: auto;
-  border: 1px solid var(--dt-colors-border-neutral-default);
   border-radius: 6px;
+}
+
+.details-entities-table [data-columnid="DataTableSpacerColumn"] {
+  display: none !important;
 }
 
 /* Accordion */

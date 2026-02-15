@@ -24,7 +24,7 @@ export const EntityPreviewModal: React.FC<EntityPreviewModalProps> = ({
 }) => {
   const columns: DataTableColumnDef<PreviewEntity>[] = useMemo(() => [
     { id: 'displayName', header: 'Name', accessor: 'displayName', minWidth: 200, width: '3fr' },
-    { id: 'entityType', header: 'Entity type', accessor: row => getEntityTypeLabel(row.entityType, entityTypes), minWidth: 150, width: '2fr' },
+    { id: 'entityType', header: 'Entity type', accessor: row => getEntityTypeLabel(row.entityType, entityTypes), minWidth: 150, width: '1fr' },
     { id: 'entityId', header: 'Entity ID', accessor: 'entityId', minWidth: 200, width: '2fr' },
   ], [entityTypes]);
 
@@ -53,7 +53,6 @@ export const EntityPreviewModal: React.FC<EntityPreviewModalProps> = ({
                 data={entities}
                 columns={columns}
                 variant={{ verticalDividers: true, verticalAlignment: { header: 'center', body: 'center' } }}
-                fullWidth
                 sortable
                 resizable
               />

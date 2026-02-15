@@ -31,8 +31,10 @@
 }
 
 .entity-preview-table {
-  max-height: 50vh;
   overflow: auto;
-  border: 1px solid var(--dt-colors-border-neutral-default);
   border-radius: 6px;
+}
+
+.entity-preview-table [data-columnid="DataTableSpacerColumn"] {
+  display: none !important;
 }

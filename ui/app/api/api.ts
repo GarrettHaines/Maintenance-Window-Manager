@@ -37,7 +37,7 @@ function transformApiItems(items: any[]): MaintenanceWindow[] {
   });
 }
 
-// --- Maintenance Windows ---
+// --- Maintenance windows ---
 
 export async function fetchMaintenanceWindows(): Promise<MaintenanceWindow[]> {
   const results: MaintenanceWindow[] = [];

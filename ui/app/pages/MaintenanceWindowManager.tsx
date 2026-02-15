@@ -16,7 +16,7 @@ import { fetchMaintenanceWindows, fetchManagementZones, fetchEntityTypes, cleanu
 import { DetailsModal } from '../components/DetailsModal';
 import { CreateModal } from '../components/CreateModal';
 
-export const MaintenanceWindows = () => {
+export const MaintenanceWindowManager = () => {
   const [windows, setWindows] = useState<MaintenanceWindow[]>([]);
   const [managementZones, setManagementZones] = useState<ManagementZone[]>([]);
   const [entityTypes, setEntityTypes] = useState<EntityTypeOption[]>(DEFAULT_ENTITY_TYPES);
