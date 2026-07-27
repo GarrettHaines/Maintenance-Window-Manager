@@ -7,17 +7,10 @@
 
 ## Features
 
-Search and sort a streamlined list of maintenance windows across your environment.
-<img width="922" height="497" alt="preview-main" src="https://github.com/user-attachments/assets/8ccf9bc6-cb51-4383-840e-a8a6301748a7" />
-
-View a full accounting of each maintenance window, including all associated entities.
-<img width="922" height="497" alt="preview-info" src="https://github.com/user-attachments/assets/12454aca-ab97-4e9f-b12c-f1a7ebe27671" />
-
-Create maintenance windows with ease in a fresh and modernized interface.
-<img width="922" height="497" alt="preview-new-window" src="https://github.com/user-attachments/assets/340689c9-f41d-4e4a-8e7a-851d04aad858" />
-
-Attach related entities in a single click. Preview which entities will be included in your maintenance window, either in full or by individual filters.
-<img width="922" height="497" alt="preview-new-window-entities" src="https://github.com/user-attachments/assets/0eeaef04-7532-4e77-8777-88e5e6299f83" />
+- Search and sort a streamlined list of maintenance windows across your environment.
+- View a full accounting of each maintenance window, including all associated entities.
+- Create maintenance windows with ease in a fresh and modernized interface.
+- Attach related entities in a single click. Preview which entities will be included in your maintenance window, either in full or by individual filters.
 
 ## Prerequisites
 
